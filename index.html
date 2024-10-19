@@ -22,12 +22,14 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section con ambos botones -->
     <header class="hero">
-        <div class="overlay"></div>
         <h1>Desafía a la IA en Tic-Tac-Toe</h1>
-        <p>Domina el tablero con el poder de la Inteligencia Artificial</p>
-        <a href="#jugar" class="btn btn-primary">¡Comienza a Jugar!</a>
+        <p class="subtitle">Domina el tablero con el poder de la Inteligencia Artificial</p>
+        <div class="btn-group">
+            <a href="#jugar" class="btn btn-primary">¡Comienza a Jugar!</a>
+            <a href="/static/tic_tac_toe.py" download="tic_tac_toe.py" class="btn btn-secondary">Descargar Código en Python</a>
+        </div>
     </header>
 
     <!-- Sección de descripción -->
@@ -53,7 +55,7 @@
         </div>
     </section>
 
-    <!-- Algoritmo Minimax -->
+    <!-- Sección Minimax -->
     <section class="minimax" id="minimax">
         <div class="container">
             <h2>¿Cómo Funciona el Algoritmo Minimax?</h2>
@@ -68,19 +70,17 @@
     <section class="game" id="jugar">
         <div class="container">
             <h2>Juega Tic-Tac-Toe contra la IA</h2>
-            <p>Disfruta del clásico juego con un oponente inteligente, o descarga el código en Python para jugar localmente.</p>
+            <p>Disfruta del clásico juego con un oponente inteligente.</p>
             <div id="board"></div>
-            <a href="/static/tic_tac_toe.py" download="tic_tac_toe.py" class="btn btn-secondary">Descargar Código en Python</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Proyecto Tic-Tac-Toe con IA diseñado para demostrar la inteligencia artificial en juegos.</p>
+        <p>Proyecto Tic-Tac-Toe con IA diseñado por dionbenan.</p>
     </footer>
 
     <script src="script.js"></script>
 
 </body>
 </html>
-

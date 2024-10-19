@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
@@ -17,8 +17,8 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    color: white;
+    padding: 15px 20px;
 }
 
 .navbar ul {
@@ -31,75 +31,100 @@ body {
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: #ff9800;
     text-decoration: none;
     font-weight: 600;
 }
 
-/* Sección hero */
-.hero {
-    position: relative;
-    background: url('static/background-hero.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 150px 20px;
+.navbar ul li a:hover {
+    color: #ffca28;
+    transition: 0.3s ease;
 }
 
-.hero .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+/* Hero con ambos botones */
+.hero {
+    background: url('/static/game.png');
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
 }
 
 .hero h1 {
     font-size: 3rem;
-    z-index: 1;
-    position: relative;
 }
 
-.hero p {
+.subtitle {
     font-size: 1.2rem;
-    z-index: 1;
-    position: relative;
+    margin-top: 20px;
+}
+
+.btn-group {
+    margin-top: 30px;
+}
+
+.btn-group .btn {
+    margin: 0 10px;
 }
 
 .hero .btn {
-    z-index: 1;
-    position: relative;
-    background-color: #ff6f61;
+    background-color: #0c5cf1;
     color: white;
     padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
+    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
 .hero .btn:hover {
-    background-color: #ff3c3c;
+    background-color: #11e0e7;
+    transform: scale(1.05);
+    transition: 0.3s;
 }
 
 /* Botones secundarios */
 .btn-secondary {
-    background-color: #3b82f6;
+    background-color: #ffca28;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border-radius: 5px;
     text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
 .btn-secondary:hover {
-    background-color: #2563eb;
+    background-color: #fff176;
+    transform: translateY(-3px);
 }
 
-/* Contenedor de las secciones */
+/* Secciones diferenciadas */
+.description, .objetivos, .minimax {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}
+
 .container {
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 50px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #e21010;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 /* Tablero de juego */
@@ -113,19 +138,23 @@ body {
 }
 
 #board .cell {
-    background-color: #eee;
+    background-color: #ffc107;
     font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     border: 2px solid #333;
-    width: 100px;
-    height: 100px;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+#board .cell:hover {
+    background-color: #ffca28;
+    transform: scale(1.05);
 }
 
 footer {
-    background-color: #333;
+    background-color: #1f1212;
     color: white;
     text-align: center;
     padding: 20px;
