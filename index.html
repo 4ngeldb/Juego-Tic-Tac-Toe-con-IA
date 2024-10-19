@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Tic-Tac-Toe con IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <h1>Juego Tic-Tac-Toe con IA</h1>
+        <ul>
+            <li><a href="#descripcion">Descripción</a></li>
+            <li><a href="#objetivos">Objetivos</a></li>
+            <li><a href="#minimax">Minimax</a></li>
+            <li><a href="#jugar">Jugar</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="overlay"></div>
+        <h1>Desafía a la IA en Tic-Tac-Toe</h1>
+        <p>Domina el tablero con el poder de la Inteligencia Artificial</p>
+        <a href="#jugar" class="btn btn-primary">¡Comienza a Jugar!</a>
+    </header>
+
+    <!-- Sección de descripción -->
+    <section class="description" id="descripcion">
+        <div class="container">
+            <h2>Descripción del Proyecto</h2>
+            <p>
+                Juega contra una IA que toma decisiones estratégicas usando el algoritmo Minimax.
+                Aprende sobre cómo se pueden aplicar los principios de la inteligencia artificial en los juegos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Objetivos -->
+    <section class="objetivos" id="objetivos">
+        <div class="container">
+            <h2>Objetivos del Proyecto</h2>
+            <ul>
+                <li>Implementar el algoritmo Minimax en el juego Tic-Tac-Toe.</li>
+                <li>Entender la recursividad y la toma de decisiones óptima.</li>
+                <li>Crear una interfaz gráfica interactiva y atractiva para los usuarios.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Algoritmo Minimax -->
+    <section class="minimax" id="minimax">
+        <div class="container">
+            <h2>¿Cómo Funciona el Algoritmo Minimax?</h2>
+            <p>
+                El algoritmo Minimax permite que la IA tome decisiones estratégicas al maximizar sus opciones de victoria
+                y minimizar las del oponente. Este juego aplica Minimax para garantizar que la IA siempre elija la mejor jugada posible.
+            </p>
+        </div>
+    </section>
+
+    <!-- Sección de Juego -->
+    <section class="game" id="jugar">
+        <div class="container">
+            <h2>Juega Tic-Tac-Toe contra la IA</h2>
+            <p>Disfruta del clásico juego con un oponente inteligente, o descarga el código en Python para jugar localmente.</p>
+            <div id="board"></div>
+            <a href="/static/tic_tac_toe.py" download="tic_tac_toe.py" class="btn btn-secondary">Descargar Código en Python</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Proyecto Tic-Tac-Toe con IA diseñado para demostrar la inteligencia artificial en juegos.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
